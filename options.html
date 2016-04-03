@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twitch Chat Hider Extension Options</title>
+        <style type="text/css">
+* {
+    font-size: 12pt;
+}
+
+div {
+    margin-bottom: 2em;
+}
+
+label {
+    font-weight: bold;
+}
+
+.note {
+    font-size: 14pt;
+}
+
+#status {
+    font-style: italic;
+}
+        </style>
+    </head>
+    <body>
+
+        <div class="note">
+            Channels' chats can be either hid or shown by default and then
+            particular channels can be excluded from this rule by listing them
+            down below.
+        </div>
+
+        <div>
+            <form>
+                <label for="action">Default chat action:</label>
+                <select id="action">
+                    <option value="hide">Hide</option>
+                    <option value="show">Show</option>
+                </select>
+
+                <br/><br/>
+
+                <label for="list">Channel exclusion list, one per line:</label><br/>
+                <textarea id="list" rows="12" cols="40"></textarea>
+
+                <br/><br/>
+
+                <button id="save">Save</button>
+            </form>
+        </div>
+        <div id="status"></div>
+
+        <script src="options.js"></script>
+    </body>
+</html>

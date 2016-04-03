@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+
+    "name": "Twitch Chat Hider",
+    "description": "Hides Twitch chats on channels as per requests",
+    "version": "1.0.0",
+    "short_name": "twichahi",
+
+    "icons": {
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+    },
+
+    "author": "Tsuri Kamppuri",
+
+    "options_page": "options.html",
+
+    "permissions": [
+        "storage"
+    ],
+
+    "content_scripts": [{
+        "js": ["embed.js"],
+        "matches": ["https://www.twitch.tv/*"]
+    }],
+
+    "web_accessible_resources": ["hider.js"]
+}
