@@ -4,7 +4,13 @@
         retryInterval = 100;
 
     function hideChat() {
-        var hideLink = document.querySelector('a[data-ember-action="1448"]'),
+        var hideLink = document
+                .evaluate(
+                    '//*[text()="Hide Chat"]',
+                    document,
+                    null,
+                    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE
+                ).snapshotItem(0),
             closeLink = document.getElementById('right_close');
 
         if (hideLink && closeLink) {

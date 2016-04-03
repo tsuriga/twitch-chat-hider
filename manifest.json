@@ -2,8 +2,8 @@
     "manifest_version": 2,
 
     "name": "Twitch Chat Hider",
-    "description": "Hides Twitch chats on channels as per requests",
-    "version": "1.0.0",
+    "description": "Hides chat on all or chosen Twitch channels automatically",
+    "version": "1.0.1",
     "short_name": "twichahi",
 
     "icons": {
