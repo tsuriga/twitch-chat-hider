@@ -10,3 +10,6 @@ Chrome extension for hiding Twitch chat by default. Exclusion/inclusion lists su
 ## AUTHORS ##
 
 * Tsuri Kamppuri
+
+## Chrome Web Store ##
+[Twitch Chat Hider on Chrome Web Store](https://chrome.google.com/webstore/detail/twitch-chat-hider/ndcgieheiojhoekkjdcipkbghnmbkiab)
